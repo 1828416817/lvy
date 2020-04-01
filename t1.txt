@@ -1,0 +1,15 @@
+import turtle
+p=turtle.Pen()
+
+colors=["red","blue","pink","green","purple","yellow"]
+p.pensize(1)
+#p.fillcolor("pink")
+p.begin_fill()
+for i in range(200):
+    p.speed(100)
+    p.width(i*6//200)
+    p.pencolor(colors[i%6])
+    p.forward(i)
+    p.right(63)
+p.end_fill()
+turtle.done()
